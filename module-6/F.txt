@@ -1,0 +1,24 @@
+#include<iostream>
+#include<Fstream>
+using namespace std;
+int main()
+{
+   fstream f;
+   f.open("File.txt",C:\users\admin\desktop);
+   int a,b;
+   a=30;
+   b=25;
+   f<<"addition is : "<<a+b;
+   f<<"multiplication is : "<<a*b;
+   f<<"substraction is : "<<a-b;
+   f.close();
+   f.open("file.txt",C:\users\admin\desktop);
+   while(!f.eof())
+   {
+     string str;
+     f>>str;
+     cout<<str<<endl;
+   }
+   f.close();
+
+}
